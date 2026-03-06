@@ -1,7 +1,6 @@
-package it.edu.iisgubbio.oggetti.sport;
+package it.edu.iisgubbio.oggetti;
 
 import java.lang.reflect.InvocationTargetException;
-import java.util.Arrays;
 
 /**
  * Classe di utilità per i test
@@ -14,14 +13,47 @@ public class ClassTestManager {
     public String pacchetto;
     public String classe;
 
+    /************************************************************************
+     * Crea un nuovo manager
+     * @param pacchetto su cui viene svolto il test
+     * @param terminale true se l'output va su terminale "a colori"
+     ***********************************************************************/
     public ClassTestManager(String pacchetto, boolean terminale) {
         errore = terminale ? "\u001B[31mERRORE\u001B[0m" : "ERRORE";
         ok = terminale ? "\u001B[32mOK\u001B[0m" : "OK";
         this.pacchetto=pacchetto;
     }
 
+    public void stampa(String messaggio , Object atteso, Object ricevuto){
+        stampa(messaggio, atteso, ricevuto, false);
+    }
+
+    public void stampa(String messaggio , Object atteso, Object ricevuto, boolean tolleranza){
+        boolean esito;
+        if(atteso instanceof String a && ricevuto instanceof String b){
+            if(tolleranza){
+                esito = distanzaLevenshtein(a, b) <= 2;
+            } else {
+                esito = a.equals(b);
+            }
+        }else{
+            esito = atteso.equals(ricevuto);
+        }
+        if(esito){
+            System.out.println(classe+" "+messaggio+" "+ok);
+        }else{
+            System.out.println(classe+" "+messaggio+" {atteso:\""+atteso+"\" ricevuto:\""+ricevuto+"\"} "+errore);
+        }
+    }
+
     public void stampa(String messaggio, boolean test) {
         System.out.println( classe+" "+messaggio+" "+ ( test ? ok : errore ));
+    }
+
+    public void stampa(Exception ex) {
+        String colpevole = ex.getMessage().replaceAll("\\b[a-z\\.]+\\.", "");
+        String tipo = ex.getClass().getSimpleName();
+        stampa(tipo+" "+colpevole, false);
     }
 
     private static int distanzaLevenshtein(String s1, String s2) {
@@ -49,21 +81,8 @@ public class ClassTestManager {
         return distanza[s1.length()][s2.length()];
     }
 
-    public void brontolaStringa(String s1, String s2) {
-        int distanza = distanzaLevenshtein(s1, s2);
-        if(distanza<2) {
-            stampa("toString", true );
-        }else {
-            stampa("toString ["+s1+"]", false );
-        }
-    }
-
-    public void stampa(Exception ex) {
-        String colpevole = ex.getMessage().replaceAll("\\b[a-z\\.]+\\.", "");
-        String tipo = ex.getClass().getSimpleName();
-        stampa(tipo+" "+colpevole, false);
-    }
-
+    /* parecchio in breve serve per aggirare il meccanismo di boxing quando vengono
+    chiamate le funzioni crea e chiama */
     private static Class<?> toPrimitive(Class<?> c) {
         if (c == Double.class)  return double.class;
         if (c == Integer.class) return int.class;
@@ -88,8 +107,10 @@ public class ClassTestManager {
 
     public Object chiama(Object obj, String method, Object... args) throws IllegalAccessException, InvocationTargetException, NoSuchMethodException {
         if (obj == null) return null;
-        Class<?>[] types = Arrays.stream(args)
-            .map(a -> toPrimitive(a.getClass())).toArray(Class<?>[]::new);
+        Class<?>[] types = new Class<?>[args.length];
+        for (int i = 0; i < args.length; i++) {
+            types[i] = toPrimitive(args[i].getClass());
+        }
         return obj.getClass().getMethod(method, types).invoke(obj, args);
     }
 }
