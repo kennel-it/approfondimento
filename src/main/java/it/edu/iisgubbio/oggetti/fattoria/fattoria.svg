@@ -1,0 +1,629 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="896.46399"
+   height="667.53699"
+   font-family="'Courier New', Courier, monospace"
+   version="1.1"
+   id="svg33"
+   sodipodi:docname="fattoria.svg"
+   inkscape:version="1.4.3 (0d15f75, 2025-12-25)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview33"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="1.4786916"
+     inkscape:cx="520.73064"
+     inkscape:cy="309.73329"
+     inkscape:window-width="2138"
+     inkscape:window-height="1297"
+     inkscape:window-x="352"
+     inkscape:window-y="38"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg33" />
+  <defs
+     id="defs1">
+    <!-- Freccia con triangolo aperto per ereditarietà UML -->
+    <marker
+       id="inherit"
+       markerWidth="16.97991"
+       markerHeight="12.128508"
+       refX="14"
+       refY="5"
+       orient="auto"
+       viewBox="0 0 16.97991 12.128507"
+       preserveAspectRatio="xMidYMid">
+      <polygon
+         points="14,5 0,10 0,0 "
+         fill="#ffffff"
+         stroke="#333333"
+         stroke-width="1.5"
+         id="polygon1" />
+    </marker>
+  </defs>
+  <!-- Sfondo -->
+  <!-- Titolo -->
+  <text
+     x="448.04001"
+     y="27.941296"
+     text-anchor="middle"
+     font-size="16px"
+     font-weight="bold"
+     fill="#333333"
+     font-family="Arial, sans-serif"
+     id="text1"
+     style="font-size:21.3333px"><tspan
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:21.3333px;font-family:Futura;-inkscape-font-specification:'Futura Bold'"
+       id="tspan84">Diagramma UML — package fattoria</tspan></text>
+  <!-- ═══════════════════════════════════════
+       CONNETTORI DI EREDITARIETÀ
+  ════════════════════════════════════════════ -->
+  <!-- Barra orizzontale del fork (y=250) -->
+  <!-- Discesa verticale → Formaggio -->
+  <!-- Discesa verticale → Ortaggio -->
+  <!-- Discesa verticale → Carne -->
+  <!-- Freccia verticale → Prodotto (triangolo aperto) -->
+  <!-- Freccia Muffato → Formaggio -->
+  <!-- ═══════════════════════════════════════
+       CLASSE: Prodotto   x=355 y=30 w=330 h=170
+  ════════════════════════════════════════════ -->
+  <rect
+     x="353.19559"
+     y="43.037224"
+     width="330"
+     height="170"
+     fill="#ffffff"
+     stroke="#333333"
+     stroke-width="1.5"
+     id="rect5" />
+  <rect
+     x="353.19559"
+     y="43.037224"
+     width="330"
+     height="30"
+     fill="#aed6f1"
+     stroke="#333333"
+     stroke-width="1.5"
+     id="rect6" />
+  <text
+     x="518.19556"
+     y="63.037224"
+     text-anchor="middle"
+     font-size="14px"
+     font-weight="bold"
+     fill="#1a5276"
+     id="text6">Prodotto</text>
+  <!-- Divisore attributi/metodi (y=112) -->
+  <line
+     x1="353.19559"
+     y1="125.03722"
+     x2="683.19562"
+     y2="125.03722"
+     stroke="#333333"
+     stroke-width="1"
+     id="line6" />
+  <!-- Attributi -->
+  <text
+     x="363.19559"
+     y="93.037224"
+     font-size="12px"
+     fill="#333333"
+     id="text7"># nome: String</text>
+  <text
+     x="363.19559"
+     y="111.03722"
+     font-size="12px"
+     fill="#333333"
+     id="text8"># prezzoAlKg: double</text>
+  <!-- Metodi -->
+  <text
+     x="363.19559"
+     y="145.03723"
+     font-size="12px"
+     fill="#333333"
+     id="text9">+ Prodotto()</text>
+  <text
+     x="363.19559"
+     y="163.03723"
+     font-size="12px"
+     fill="#333333"
+     id="text10">+ Prodotto(nome, prezzoAlKg)</text>
+  <text
+     x="363.19559"
+     y="181.03723"
+     font-size="12px"
+     fill="#333333"
+     id="text11">+ calcolaPrezzo(peso): double</text>
+  <text
+     x="363.19559"
+     y="199.03723"
+     font-size="12px"
+     fill="#333333"
+     id="text12">+ toString(): String</text>
+  <!-- ═══════════════════════════════════════
+       CLASSE: Formaggio   x=20 y=290 w=370 h=152
+  ════════════════════════════════════════════ -->
+  <rect
+     x="26.195597"
+     y="283.03723"
+     width="370"
+     height="152"
+     fill="#ffffff"
+     stroke="#333333"
+     stroke-width="1.5"
+     id="rect12" />
+  <rect
+     x="26.195597"
+     y="283.03723"
+     width="370"
+     height="30"
+     fill="#a9dfbf"
+     stroke="#333333"
+     stroke-width="1.5"
+     id="rect13" />
+  <text
+     x="211.1956"
+     y="303.03723"
+     text-anchor="middle"
+     font-size="14px"
+     font-weight="bold"
+     fill="#1e8449"
+     id="text13">Formaggio</text>
+  <!-- Divisore (y=372) -->
+  <line
+     x1="26.195597"
+     y1="365.03723"
+     x2="396.19559"
+     y2="365.03723"
+     stroke="#333333"
+     stroke-width="1"
+     id="line13" />
+  <!-- Attributi -->
+  <text
+     x="36.195595"
+     y="333.03723"
+     font-size="12px"
+     fill="#333333"
+     id="text14"># tempoStagionatura: int</text>
+  <text
+     x="36.195595"
+     y="351.03723"
+     font-size="12px"
+     fill="#333333"
+     id="text15"># dop: boolean</text>
+  <!-- Metodi -->
+  <text
+     x="36.195595"
+     y="385.03723"
+     font-size="12px"
+     fill="#333333"
+     id="text16">+ Formaggio(nome, prezzo, stagionatura)</text>
+  <text
+     x="36.195595"
+     y="403.03723"
+     font-size="12px"
+     fill="#333333"
+     id="text17">+ Formaggio(nome, prezzo, stagionatura, dop)</text>
+  <text
+     x="36.195595"
+     y="421.03723"
+     font-size="12px"
+     fill="#333333"
+     id="text18">+ toString(): String</text>
+  <!-- ═══════════════════════════════════════
+       CLASSE: Ortaggio   x=415 y=290 w=280 h=116
+  ════════════════════════════════════════════ -->
+  <rect
+     x="430.77872"
+     y="488.33618"
+     width="280"
+     height="116"
+     fill="#ffffff"
+     stroke="#333333"
+     stroke-width="1.5"
+     id="rect18" />
+  <rect
+     x="430.77872"
+     y="488.33618"
+     width="280"
+     height="30"
+     fill="#a9dfbf"
+     stroke="#333333"
+     stroke-width="1.5"
+     id="rect19" />
+  <text
+     x="570.77875"
+     y="508.33618"
+     text-anchor="middle"
+     font-size="14px"
+     font-weight="bold"
+     fill="#1e8449"
+     id="text19">Ortaggio</text>
+  <!-- Divisore (y=354) -->
+  <line
+     x1="430.77872"
+     y1="552.33618"
+     x2="710.77875"
+     y2="552.33618"
+     stroke="#333333"
+     stroke-width="1"
+     id="line19" />
+  <!-- Attributi -->
+  <text
+     x="440.77872"
+     y="538.33618"
+     font-size="12px"
+     fill="#333333"
+     id="text20"># biologico: boolean</text>
+  <!-- Metodi -->
+  <text
+     x="440.77872"
+     y="572.33618"
+     font-size="12px"
+     fill="#333333"
+     id="text21">+ Ortaggio(nome, prezzo, biologico)</text>
+  <text
+     x="440.77872"
+     y="590.33618"
+     font-size="12px"
+     fill="#333333"
+     id="text22">+ toString(): String</text>
+  <!-- ═══════════════════════════════════════
+       CLASSE: Carne   x=720 y=290 w=300 h=134
+  ════════════════════════════════════════════ -->
+  <rect
+     x="585.71399"
+     y="283.90933"
+     width="300"
+     height="134"
+     fill="#ffffff"
+     stroke="#333333"
+     stroke-width="1.5"
+     id="rect22" />
+  <rect
+     x="585.71399"
+     y="283.90933"
+     width="300"
+     height="30"
+     fill="#a9dfbf"
+     stroke="#333333"
+     stroke-width="1.5"
+     id="rect23" />
+  <text
+     x="735.71399"
+     y="303.90933"
+     text-anchor="middle"
+     font-size="14px"
+     font-weight="bold"
+     fill="#1e8449"
+     id="text23">Carne</text>
+  <!-- Divisore (y=372) -->
+  <line
+     x1="585.71399"
+     y1="365.90933"
+     x2="885.71399"
+     y2="365.90933"
+     stroke="#333333"
+     stroke-width="1"
+     id="line23" />
+  <!-- Attributi -->
+  <text
+     x="595.71399"
+     y="333.90933"
+     font-size="12px"
+     fill="#333333"
+     id="text24">- kosher: boolean</text>
+  <text
+     x="595.71399"
+     y="351.90933"
+     font-size="12px"
+     fill="#333333"
+     id="text25">- carneBianca: boolean</text>
+  <!-- Metodi -->
+  <text
+     x="595.71399"
+     y="385.90933"
+     font-size="12px"
+     fill="#333333"
+     id="text26">+ Carne(n, p, k, cb)</text>
+  <text
+     x="595.71399"
+     y="403.90933"
+     font-size="12px"
+     fill="#333333"
+     id="text27">+ toString(): String</text>
+  <!-- ═══════════════════════════════════════
+       CLASSE: Muffato   x=20 y=510 w=310 h=116
+  ════════════════════════════════════════════ -->
+  <rect
+     x="32.541527"
+     y="479.04306"
+     width="310"
+     height="116"
+     fill="#ffffff"
+     stroke="#333333"
+     stroke-width="1.5"
+     id="rect27" />
+  <rect
+     x="32.541527"
+     y="479.04306"
+     width="310"
+     height="30"
+     fill="#fad7a0"
+     stroke="#333333"
+     stroke-width="1.5"
+     id="rect28" />
+  <text
+     x="187.54153"
+     y="499.04306"
+     text-anchor="middle"
+     font-size="14px"
+     font-weight="bold"
+     fill="#784212"
+     id="text28">Muffato</text>
+  <!-- Divisore (y=592) -->
+  <line
+     x1="32.541527"
+     y1="561.04303"
+     x2="342.5415"
+     y2="561.04303"
+     stroke="#333333"
+     stroke-width="1"
+     id="line28" />
+  <!-- Attributi -->
+  <text
+     x="42.541527"
+     y="529.04303"
+     font-size="12px"
+     fill="#333333"
+     id="text29">~ muffa: String</text>
+  <text
+     x="42.541527"
+     y="547.04303"
+     font-size="12px"
+     fill="#333333"
+     id="text30">~ interno: boolean</text>
+  <!-- Metodi -->
+  <text
+     x="42.541527"
+     y="581.04303"
+     font-size="12px"
+     fill="#333333"
+     id="text31">+ Muffato(nome, prezzoAlKg, muffa)</text>
+  <!-- ═══════════════════════════════════════
+       LEGENDA
+  ════════════════════════════════════════════ -->
+  <rect
+     x="13.195597"
+     y="635.03723"
+     width="480"
+     height="22"
+     rx="4"
+     fill="#f8f9f9"
+     stroke="#cccccc"
+     stroke-width="1"
+     id="rect31" />
+  <text
+     x="23.195597"
+     y="650.03723"
+     font-size="11px"
+     fill="#555555"
+     font-family="Arial, sans-serif"
+     id="text32">+ public # protected - private ~ package-private</text>
+  <text
+     xml:space="preserve"
+     style="font-weight:bold;font-size:48px;line-height:0.4;font-family:Futura;-inkscape-font-specification:'Futura Bold';text-align:end;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;direction:ltr;text-anchor:end;fill:#eecd00;stroke:#646765;stroke-width:0.377953;stroke-linecap:round;stroke-linejoin:round;paint-order:fill markers stroke"
+     x="283.67761"
+     y="460.45465"
+     id="text34"><tspan
+       sodipodi:role="line"
+       id="tspan33"
+       x="283.67761"
+       y="460.45465" /></text>
+  <rect
+     style="fill:#ffff00;fill-opacity:1;stroke:#646464;stroke-width:0.944882;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
+     id="rect39"
+     width="349.01178"
+     height="49.009792"
+     x="10.494316"
+     y="237.28972"
+     ry="5"
+     rx="5" />
+  <text
+     xml:space="preserve"
+     style="font-weight:bold;font-size:10.6667px;line-height:0;font-family:Futura;-inkscape-font-specification:'Futura Bold';text-align:start;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.377953;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;paint-order:fill markers stroke"
+     x="24.640112"
+     y="257.84174"
+     id="text41"><tspan
+       sodipodi:role="line"
+       x="24.640112"
+       y="257.84174"
+       style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:10.6667px;line-height:1.4;font-family:Futura;-inkscape-font-specification:'Futura Medium'"
+       id="tspan42">Formaggio <tspan
+   style="font-size:10.6667px;fill:#ff0000;fill-opacity:1"
+   id="tspan45">nome</tspan>, prezzoAlKg=<tspan
+   style="font-size:10.6667px;fill:#ff0000;fill-opacity:1"
+   id="tspan44">prezzo</tspan>, stagionato <tspan
+   style="font-size:10.6667px;fill:#ff0000;fill-opacity:1"
+   id="tspan46">mesi</tspan> mesi <tspan
+   style="font-size:10.6667px;fill:#ff0000;fill-opacity:1"
+   id="tspan47">DOP</tspan></tspan><tspan
+       sodipodi:role="line"
+       x="24.640112"
+       y="272.77512"
+       style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:10.6667px;line-height:1.4;font-family:Futura;-inkscape-font-specification:'Futura Medium'"
+       id="tspan43">Formaggio <tspan
+   style="font-size:10.6667px;fill:#ff0000;fill-opacity:1"
+   id="tspan48">nome</tspan>, prezzoAlKg=<tspan
+   style="font-size:10.6667px;fill:#ff0000;fill-opacity:1"
+   id="tspan49">prezzo</tspan>, stagionato <tspan
+   style="font-size:10.6667px;fill:#ff0000;fill-opacity:1"
+   id="tspan50">0</tspan> mesi</tspan></text>
+  <rect
+     style="fill:#ffff00;fill-opacity:1;stroke:#646464;stroke-width:0.944882;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
+     id="rect37"
+     width="299.01892"
+     height="29.018917"
+     x="64.282257"
+     y="55.141457"
+     ry="5.0004163"
+     rx="5" />
+  <text
+     xml:space="preserve"
+     style="font-weight:bold;font-size:10.6667px;line-height:0.4;font-family:Futura;-inkscape-font-specification:'Futura Bold';text-align:end;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;direction:ltr;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.377953;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;paint-order:fill markers stroke"
+     x="282.48682"
+     y="73.207802"
+     id="text35"><tspan
+       sodipodi:role="line"
+       id="tspan34"
+       x="282.48682"
+       y="73.207802"
+       style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:10.6667px;font-family:Futura;-inkscape-font-specification:'Futura Medium'">prodotto <tspan
+   style="font-size:10.6667px;fill:#ff0000;fill-opacity:1"
+   id="tspan36">nome</tspan>, <tspan
+   style="font-size:10.6667px;fill:#ff0000;fill-opacity:1"
+   id="tspan35">prezzo</tspan>€/kg</tspan></text>
+  <path
+     style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#inherit)"
+     d="m 361.0178,282.91429 51.68781,-69.51924"
+     id="path51"
+     inkscape:connector-type="polyline"
+     inkscape:connector-curvature="0" />
+  <rect
+     style="fill:#ffff00;fill-opacity:1;stroke:#646464;stroke-width:0.944882;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
+     id="rect51"
+     width="350"
+     height="30"
+     x="452.42133"
+     y="596.49103"
+     ry="5"
+     rx="5" />
+  <text
+     xml:space="preserve"
+     style="font-weight:bold;font-size:10.6667px;line-height:0.4;font-family:Futura;-inkscape-font-specification:'Futura Bold';text-align:end;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;direction:ltr;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.377953;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;paint-order:fill markers stroke"
+     x="787.86713"
+     y="614.50403"
+     id="text53"><tspan
+       sodipodi:role="line"
+       id="tspan53"
+       x="787.86713"
+       y="614.50403"
+       style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:10.6667px;font-family:Futura;-inkscape-font-specification:'Futura Medium'">Ortaggio [biologico=<tspan
+   style="fill:#ff0000;fill-opacity:1"
+   id="tspan56">biologico</tspan>, nome=<tspan
+   style="fill:#ff0000;fill-opacity:1"
+   id="tspan55">nome</tspan>, prezzoAlKg=<tspan
+   style="fill:#ff0000;fill-opacity:1"
+   id="tspan54">prezzo</tspan></tspan></text>
+  <path
+     style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#inherit)"
+     d="M 479.68093,488.73443 491.99048,219.23435"
+     id="path57"
+     inkscape:connector-type="polyline"
+     inkscape:connector-curvature="0" />
+  <path
+     style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#inherit)"
+     d="M 683.47159,283.00415 640.81846,213.16561"
+     id="path58"
+     inkscape:connector-type="polyline"
+     inkscape:connector-curvature="0" />
+  <rect
+     style="fill:#ffff00;fill-opacity:1;stroke:#646464;stroke-width:0.944882;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
+     id="rect58"
+     width="350"
+     height="50"
+     x="507.63083"
+     y="412.80026"
+     ry="5"
+     rx="5" />
+  <text
+     xml:space="preserve"
+     style="font-weight:bold;font-size:10.6667px;line-height:1.4;font-family:Futura;-inkscape-font-specification:'Futura Bold';text-align:start;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.377953;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;paint-order:fill markers stroke"
+     x="535.80481"
+     y="433.31229"
+     id="text61"><tspan
+       sodipodi:role="line"
+       x="535.80481"
+       y="433.31229"
+       style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:10.6667px;line-height:1.4;font-family:Futura;-inkscape-font-specification:'Futura Medium'"
+       id="tspan62"><tspan
+   style="fill:#ff0000;fill-opacity:1"
+   id="tspan66">costarelle 9.5</tspan>€/Kg <tspan
+   style="fill:#ff0000;fill-opacity:1"
+   id="tspan65">NON</tspan> Kosher [<tspan
+   style="fill:#ff0000;fill-opacity:1"
+   id="tspan64">carne rossa]</tspan></tspan><tspan
+       sodipodi:role="line"
+       x="535.80481"
+       y="448.40286"
+       style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:10.6667px;line-height:1.4;font-family:Futura;-inkscape-font-specification:'Futura Medium'"
+       id="tspan63"><tspan
+   style="fill:#ff0000;fill-opacity:1"
+   id="tspan69">petto di pollo 12.0</tspan>€/Kg <tspan
+   style="fill:#ff0000;fill-opacity:1"
+   id="tspan76">macellazione</tspan> Kosher [<tspan
+   style="fill:#ff0000;fill-opacity:1"
+   id="tspan77">carne bianca</tspan>]</tspan></text>
+  <rect
+     style="fill:#ffff00;fill-opacity:1;stroke:#646464;stroke-width:0.944882;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
+     id="rect78"
+     width="350"
+     height="30"
+     x="-392.61188"
+     y="588.35406"
+     ry="5"
+     transform="scale(-1,1)"
+     rx="5" />
+  <text
+     xml:space="preserve"
+     style="font-weight:bold;font-size:10.6667px;line-height:0.4;font-family:Futura;-inkscape-font-specification:'Futura Bold';text-align:end;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;direction:ltr;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.377953;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;paint-order:fill markers stroke"
+     x="368.15924"
+     y="606.367"
+     id="text80"><tspan
+       sodipodi:role="line"
+       id="tspan80"
+       x="368.15924"
+       y="606.367"
+       style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:10.6667px;font-family:Futura;-inkscape-font-specification:'Futura Medium'">Formaggio <tspan
+   style="fill:#ff0000;fill-opacity:1"
+   id="tspan81">Gorgonzola</tspan>, prezzoAlKg=<tspan
+   style="fill:#ff0000;fill-opacity:1"
+   id="tspan82">22.0</tspan>, stagionato <tspan
+   style="fill:#ff0000;fill-opacity:1"
+   id="tspan83">0</tspan> mesi</tspan></text>
+  <path
+     style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#inherit)"
+     d="m 168.7128,478.23232 18.55777,-41.29766"
+     id="path84"
+     inkscape:connector-type="polyline"
+     inkscape:connector-curvature="0" />
+  <path
+     id="rect86"
+     style="fill:#646464;fill-opacity:1;stroke:none;stroke-width:0.64928;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
+     d="m 198.47398,87.757361 -34.78906,35.609369 h 19.32031 v 13.05079 H 94.761083 c -5.064411,0 -9.142579,4.07621 -9.142579,9.14062 v 25.58008 c 0,5.06441 4.078168,9.14258 9.142579,9.14258 H 302.18687 c 5.06441,0 9.14062,-4.07817 9.14062,-9.14258 v -25.58008 c 0,-5.06441 -4.07621,-9.14062 -9.14062,-9.14062 h -88.24414 v -13.05079 h 19.32031 z" />
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10.6667px;line-height:1.4;font-family:Futura;-inkscape-font-specification:'Futura Bold';text-align:center;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:#646464;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
+     x="198.75768"
+     y="154.04771"
+     id="text85"><tspan
+       sodipodi:role="line"
+       x="198.75768"
+       y="154.04771"
+       id="tspan86"
+       style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:10.6667px;font-family:Futura;-inkscape-font-specification:'Futura Medium';fill:#ffffff;fill-opacity:1;stroke:none">in questi box ci sono indicazioni</tspan><tspan
+       sodipodi:role="line"
+       x="198.75768"
+       y="169.13828"
+       style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:10.6667px;font-family:Futura;-inkscape-font-specification:'Futura Medium';fill:#ffffff;fill-opacity:1;stroke:none"
+       id="tspan87">su come deve lavorare il toString()</tspan></text>
+</svg>

@@ -1,0 +1,33 @@
+                              +------------------------------------+
+                              | Prodotto                           |
+                              +------------------------------------+
+                              | #nome:String                       |
+                              | #prezzoAlKg: double                |
+                              +------------------------------------+
+                              | +Prodotto(n,p)                     |
+                              | +Prodotto()                        |
+                 +----------->| +tpString():String                 |<----------+
+                 |            | +calcolaPrezzo(peso:double):double |           |
+                 |            +------------------------------------+           |
+                 |                             ^                               |
+                 |                             |                               |
+ +--------------------------+      +---------------------+      +---------------------------+
+ |  Ortaggio                |      | Carne               |      | Formaqggio                |
+ +--------------------------+      +---------------------+      +---------------------------+
+ | #biologico: boolean      |      | -kosher: boolean    |      | #tempoDiStagionatura: int |
+ +--------------------------+      | -bianca: boolean    |      | #dop: boolean             |
+ | +Ortaggio(n,p,b)         |      +---------------------+      +---------------------------+
+ | +isBiologico():boolean   |      | +Carne(n,p,b,k)     |      | +Formaggio(n,p,t,d)       |
+ | +setBiologico(b:boolean) |      | +toString():String  |      | +Formaggio(n,p,t)         |
+ | +toString():String       |      | +isBianca():boolean |      | +toString():String        |
+ +--------------------------+      | isKosher():boolean  |      +---------------------------+
+                                   +---------------------+                     ^
+                                                                               |
+                                                                   +--------------------+
+                                                                   | Muffato            |
+                                                                   +--------------------+
+                                                                   | #nomeMuffa: String |
+                                                                   | #interno: boolean  |
+                                                                   +--------------------+
+                                                                   | +Muffato(n,p,nm)   |
+                                                                   +--------------------+
