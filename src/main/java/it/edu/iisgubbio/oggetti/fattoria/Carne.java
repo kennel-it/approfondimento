@@ -1,4 +1,4 @@
-package it.edu.informatica.oggetti.fattoria;
+package it.edu.iisgubbio.oggetti.fattoria;
 
 public class Carne extends Prodotto {
 

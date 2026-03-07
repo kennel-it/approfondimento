@@ -1,5 +1,7 @@
 package it.edu.iisgubbio.oggetti.mobilita;
 
+import java.util.List;
+
 import it.edu.iisgubbio.oggetti.ClassTestManager;
 
 /**
@@ -7,8 +9,9 @@ import it.edu.iisgubbio.oggetti.ClassTestManager;
  * @hidden
  */
 public class TesterMobilita {
-    public static void main(String[] args) {
-        ClassTestManager m = new ClassTestManager("it.edu.iisgubbio.oggetti.mobilita", true);
+
+    public List<String> doTest(boolean console) {
+        ClassTestManager m = new ClassTestManager("it.edu.iisgubbio.oggetti.mobilita", console);
 
         // --- MezzoDiTrasporto ---
         // Traino: nome="Traino", costo=1200.0
@@ -233,5 +236,11 @@ public class TesterMobilita {
         } catch (Exception e) {
             m.stampa(e);
         }
+        return m.getMessaggi();
+    }
+
+    public static void main(String[] args) {
+        TesterMobilita tester = new TesterMobilita();
+        tester.doTest(true);
     }
 }

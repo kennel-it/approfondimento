@@ -1,6 +1,6 @@
 package it.edu.iisgubbio.oggetti.mobilita;
 
-/**
+/****************************************************************************
  * Aereo a motore.
  *
  * <p>Estende {@link Volante}. Aggiunge la <b>distanza massima</b>
@@ -11,7 +11,7 @@ package it.edu.iisgubbio.oggetti.mobilita;
  * (costo, distanza massima, tipo di motore) partono da {@code 0} /
  * {@code false} e vanno impostati tramite i rispettivi setter.
  * La quota massima eredita il default di {@link Volante} (2400 m).</p>
- */
+ ***************************************************************************/
 public class Aereo extends Volante{
 
     private boolean reazione;

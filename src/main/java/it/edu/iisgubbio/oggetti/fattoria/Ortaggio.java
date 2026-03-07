@@ -1,4 +1,4 @@
-package it.edu.informatica.oggetti.fattoria;
+package it.edu.iisgubbio.oggetti.fattoria;
 
 public class Ortaggio extends Prodotto {
 
@@ -8,11 +8,11 @@ public class Ortaggio extends Prodotto {
 	public String toString() {
 		return "Ortaggio [biologico=" + biologico + ", nome=" + nome + ", prezzoAlKg=" + prezzoAlKg + "]";
 	}
-	
+
 	public Ortaggio(String nome, double prezzoAlKg, boolean biologico) {
 		super(nome,prezzoAlKg);
 		this.biologico=biologico;
 	}
-	
+
 
 }

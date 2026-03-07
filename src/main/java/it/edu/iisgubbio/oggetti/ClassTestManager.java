@@ -1,6 +1,7 @@
 package it.edu.iisgubbio.oggetti;
 
 import java.lang.reflect.InvocationTargetException;
+import java.util.ArrayList;
 
 /**
  * Classe di utilità per i test
@@ -12,6 +13,7 @@ public class ClassTestManager {
     private final String ok;
     public String pacchetto;
     public String classe;
+    ArrayList<String> messaggi = new ArrayList<>();
 
     /************************************************************************
      * Crea un nuovo manager
@@ -22,6 +24,10 @@ public class ClassTestManager {
         errore = terminale ? "\u001B[31mERRORE\u001B[0m" : "ERRORE";
         ok = terminale ? "\u001B[32mOK\u001B[0m" : "OK";
         this.pacchetto=pacchetto;
+    }
+
+    public ArrayList<String> getMessaggi() {
+        return messaggi;
     }
 
     public void stampa(String messaggio , Object atteso, Object ricevuto){
@@ -40,14 +46,20 @@ public class ClassTestManager {
             esito = atteso.equals(ricevuto);
         }
         if(esito){
-            System.out.println(classe+" "+messaggio+" "+ok);
+            String m = classe+" "+messaggio+" "+ok;
+            messaggi.add(m);
+            System.out.println(m);
         }else{
-            System.out.println(classe+" "+messaggio+" {atteso:\""+atteso+"\" ricevuto:\""+ricevuto+"\"} "+errore);
+            String m = classe+" "+messaggio+" {atteso:\""+atteso+"\" ricevuto:\""+ricevuto+"\"} "+errore;
+            messaggi.add(m);
+            System.out.println(m);
         }
     }
 
     public void stampa(String messaggio, boolean test) {
-        System.out.println( classe+" "+messaggio+" "+ ( test ? ok : errore ));
+        String m = classe+" "+messaggio+" "+ ( test ? ok : errore );
+        messaggi.add(m);
+        System.out.println(m);
     }
 
     public void stampa(Exception ex) {

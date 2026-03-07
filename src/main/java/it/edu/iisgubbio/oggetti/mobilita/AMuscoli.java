@@ -9,6 +9,9 @@ package it.edu.iisgubbio.oggetti.mobilita;
  * <p>Il nome dei muscoli viene sempre memorizzato in <b>minuscolo</b>,
  * indipendentemente da come viene passato al costruttore o al setter.</p>
  *
+ * <p>Come insieme minimo i muscoli da tener ein considerazione
+ * sono quadricipiti, bicipiti, pettorali e dorsali.</p>
+ *
  * <p>Sottoclassi concrete:
  * {@link Bicicletta}, {@link Skateboard}, {@link Barca}.</p>
  */

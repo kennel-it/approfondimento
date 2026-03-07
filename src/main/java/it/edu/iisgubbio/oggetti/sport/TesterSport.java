@@ -1,5 +1,7 @@
 package it.edu.iisgubbio.oggetti.sport;
 
+import java.util.List;
+
 import it.edu.iisgubbio.oggetti.ClassTestManager;
 
 /**
@@ -7,8 +9,8 @@ import it.edu.iisgubbio.oggetti.ClassTestManager;
  * @hidden
  */
 public class TesterSport {
-    public static void main(String[] args) {
-	    ClassTestManager m = new ClassTestManager("it.edu.iisgubbio.oggetti.sport", true);
+    public List<String> doTest(boolean console) {
+	    ClassTestManager m = new ClassTestManager("it.edu.iisgubbio.oggetti.sport", console);
 
         // --- Atleta ---
         // Luigi: eta=24, pesoKg=78.0, altezzaM=182.0, anniEsperienza=6
@@ -68,6 +70,11 @@ public class TesterSport {
         } catch (Exception e) {
             m.stampa(e);
         }
+        return m.getMessaggi();
+    }
 
+    public static void main(String[] args) {
+        TesterSport tester = new TesterSport();
+        tester.doTest(true);
     }
 }

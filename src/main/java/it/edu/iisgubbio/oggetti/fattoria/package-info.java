@@ -75,6 +75,4 @@
  *     per completarlo
  *
  **********************************************/
-
-
-package it.edu.informatica.oggetti.fattoria;
+package it.edu.iisgubbio.oggetti.fattoria;

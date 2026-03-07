@@ -18,6 +18,6 @@
  *       {@link it.edu.iisgubbio.oggetti.mobilita.Deltaplano}</li>
  * </ul>
  *
- * <img src="doc-files/uml-classi.svg" alt="Diagramma delle classi"/>
+ * <img src="doc-files/uml-classi.svg" alt="Diagramma delle classi" width="800"/>
  */
 package it.edu.iisgubbio.oggetti.mobilita;
